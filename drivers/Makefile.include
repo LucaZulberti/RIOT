@@ -73,3 +73,7 @@ endif
 ifneq (,$(filter w5100,$(USEMODULE)))
     USEMODULE_INCLUDES += $(RIOTBASE)/drivers/w5100/include
 endif
+ifneq (,$(filter tsl256x,$(USEMODULE)))
+    USEMODULE_INCLUDES += $(RIOTBASE)/drivers/tsl256x/include
+endif
+
